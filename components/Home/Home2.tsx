@@ -10,7 +10,7 @@ export default function Home2() {
     return (
         <div className="flex flex-col h-auto min-h-[100vh]">
             <div className="flex pt-[50px] pb-[50px] text-center justify-center w-full text-4xl font-bold">
-                <p>Crafting Fashion with Nature's Essence</p>
+                <p>Crafting Fashion with Natures Essence</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-5 lg:px-20 justify-items-center">
                 <div className="sm:w-[300px] bg-white border border-gray-200 rounded-lg shadow">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair, Playfair_Display } from "@next/font/google"
+import {Playfair_Display } from "@next/font/google"
 import "./globals.css";
 
 export const metadata: Metadata = {
