@@ -1,6 +1,6 @@
 export default function Home3() {
     return (
-        <div className="flex flex-col justify-between min-h-screen">
+        <div className="flex flex-col justify-between mb-[100px]">
             <div className="flex flex-col w-full text-center bg-color5 pb-10">
                 <div className="flex flex-col py-12 w-full text-center gap-5">
                     <p className="text-2xl md:text-4xl">What we do</p>
@@ -14,23 +14,33 @@ export default function Home3() {
                         <p className="text-sm md:text-base">
                             CUE was founded with the commitment to create clothing that not only reflects your unique essence but also nurtures the earth.
                         </p>
+                        <span className="underline">Learn More</span>
                     </div>
                     <div className="flex flex-col text-left w-full md:w-[300px] gap-3">
                         <h1 className="text-lg md:text-xl font-bold">About Us :</h1>
                         <p className="text-sm md:text-base">
                             Craft Unique Essence, we believe that fashion should be a harmonious blend of individuality, creativity, and a deep respect for our planet.
                         </p>
+                        <span className="underline">Learn More</span>
                     </div>
                     <div className="flex flex-col text-left w-full md:w-[300px] gap-3">
-                        <h1 className="text-lg md:text-xl font-bold">The Good Journal :</h1>
+                        <h1 className="text-lg md:text-xl font-bold">Innovation Meets Tradition :</h1>
                         <p className="text-sm md:text-base">
                             We challenge conventional fashion with our fusion of time-honored craftsmanship and modern techniques.
                         </p>
+                        <span className="underline">Learn More</span>
                     </div>
                 </div>
             </div>
-            <div className=" w-full h-[50vh] lg:items-center flex text-center sm:text-left sm:px-[100px] text-color1 lg:text-[70px] text-[40px] pt-10">
-                <p>Redefining fashion with sustainable innovation and timeless craftsmanship.</p>
+            <div className="flex flex-col justify-center items-center text-center lg:px-[100px] sm:text-center  sm:px-[20px] lg:items-start lg:text-left">
+                <p className="text-color1 font-bold text-4xl lg:pr-[200px] lg:text-[50px] lg:w-3/4 lg:text-left lg:pt-10 tracking-wide leading-relaxed">
+                    REDEFINING FASHION WITH SUSTAINABLE INNOVATION AND TIMELESS CRAFTSMANSHIP.
+                </p>
+                <div className="flex justify-center lg:justify-start lg:w-1/4 mt-5">
+                    <div className="border-2 border-color1 rounded-2xl p-2">
+                        <span className="text-lg">LEARN MORE</span>
+                    </div>
+                </div>
             </div>
         </div>
     );

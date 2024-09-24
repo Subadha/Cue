@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import bg1 from "@/images/bg1.png";
-import img from "@/images/img1.png"
+import bg5 from "@/images/bg5.png";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
@@ -11,17 +11,17 @@ export default function Home() {
     useEffect(() => {
         const textElement = textRef.current;
         if (textElement) {
-            const containerWidth = textElement.offsetWidth; // Get the width of the text container
+            const containerWidth = textElement.offsetWidth; 
 
-            // GSAP animation to move text from left to right infinitely
+            
             gsap.fromTo(
                 textElement,
-                { x: `-${containerWidth}px` }, // Start from off-screen (left)
+                { x: `-${containerWidth}px` }, 
                 {
-                    x: "100vw", // Move the text fully to the right
-                    duration: 15, // Adjust duration as needed
-                    ease: "linear", // Ensure constant speed
-                    repeat: -1, // Infinite loop
+                    x: "100vw", 
+                    duration: 15, 
+                    ease: "linear", 
+                    repeat: -1, 
                 }
             );
         }
@@ -34,7 +34,7 @@ export default function Home() {
                     className="flex flex-col md:flex-row w-full"
                     style={{ height: "calc(100vh - 154px)" }}
                 >
-                    {/* Left Image Section - Visible on medium screens and above */}
+                    
                     <div className="hidden md:block w-1/2 h-full relative">
                         <Image
                             src={bg1}
@@ -43,11 +43,11 @@ export default function Home() {
                         />
                     </div>
 
-                    {/* Right Content Section */}
+                   
                     <div className="w-full md:w-1/2 h-full relative">
-                        {/* Background Image - Visible on all screens */}
+                        
                         <Image
-                            src={img}
+                            src={bg5}
                             alt="Background Image"
                             fill
                         />
@@ -82,13 +82,13 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Moving Text Section */}
+            
             <div className="flex h-[50px] bg-color1 text-white items-center overflow-hidden">
                 <div ref={textRef} className="whitespace-nowrap">
                     <p className="text-xs sm:text-sm inline-block mr-[500px]">
-                        Zero Waste
+                        ZERO WASTE
                     </p>
-                    <p className="text-xl sm:text-2xl inline-block">Organic Futurism Aesthetics</p>
+                    <p className="text-xl sm:text-2xl inline-block">ORGANIC FUTURISM AESTHETICS</p>
                 </div>
             </div>
         </div>

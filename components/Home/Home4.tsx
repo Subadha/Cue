@@ -1,32 +1,33 @@
-import img1 from "@/images/img5.png"
-import img2 from "@/images/img6.png"
-import img3 from "@/images/img7.png"
-import img4 from "@/images/img8.png"
+import img1 from "@/images/img5.png";
+import img2 from "@/images/img6.png";
+import img3 from "@/images/img7.png";
+import img4 from "@/images/img8.png";
 import { FaArrowRight } from "react-icons/fa";
-import Image from "next/image"
-export default function Home4(){
-    return(
-        <div className="flex flex-wrap justify-evenly items-center h-auto md:h-[50vh] sm:mb-[120px]">
-            <div className="flex relative gap-5">
-                <div className="">
-                    <Image src={img1} alt="img" />
+import Image from "next/image";
+
+export default function Home4() {
+    return (
+        <div className="flex flex-wrap justify-center gap-2 items-center lg:h-[50vh] sm:mb-[120px]">
+            <div className="flex relative gap-5 w-full sm:w-auto">
+                <div className="w-full sm:w-auto">
+                    <Image src={img1} alt="img" className="object-cover w-full sm:w-auto" />
                 </div>
-                <div className="flex gap-5 flex-col absolute bottom-5 right-5 text-right">
-                    <p className="text-white font-bold text-xl">ARCHIVE SALE</p>
-                    <button className="text-center lg:w-[7vw] w-[25vw]  bg-white rounded-lg text-black px-4 py-2 font-bold flex items-center gap-2">
+                <div className="absolute bottom-5 right-5 text-right flex flex-col gap-3">
+                    <p className="text-white font-bold text-lg sm:text-xl">ARCHIVE SALE</p>
+                    <button className="text-center w-[40vw] sm:w-[25vw] md:w-[10vw] bg-white rounded-lg text-black px-4 py-2 font-bold flex items-center gap-2">
                         SHOP <FaArrowRight />
                     </button>
                 </div>
             </div>
-            <div className="flex">
-                <Image src={img2} alt="img" />
+            <div className="w-full sm:w-auto">
+                <Image src={img2} alt="img" className="object-cover w-full sm:w-auto" />
             </div>
-            <div className="flex">
-                <Image src={img3} alt="img" />
+            <div className="w-full sm:w-auto">
+                <Image src={img3} alt="img" className="object-cover w-full sm:w-auto" />
             </div>
-            <div className="flex">
-                <Image src={img4} alt="img" />
+            <div className="w-full sm:w-auto">
+                <Image src={img4} alt="img" className="object-cover w-full sm:w-auto" />
             </div>
         </div>
-    )
+    );
 }
