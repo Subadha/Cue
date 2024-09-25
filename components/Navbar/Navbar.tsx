@@ -4,6 +4,7 @@ import { IoBagOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { CiSliderHorizontal } from "react-icons/ci";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,11 @@ export default function Navbar() {
             {/* Main Navbar */}
             <div className="flex justify-between items-center px-4 py-3 md:px-10 lg:py-4">
                 {/* Logo */}
-                <div className="text-2xl font-bold">Logo</div>
+                <div className="text-2xl font-bold"><Link href="/">Logo</Link></div>
 
                 {/* Menu Items - hidden on mobile */}
                 <ul className={`hidden lg:flex lg:gap-8 text-lg`}>
-                    <li>Women</li>
+                    <li><Link href="/product">Women</Link></li>
                     <li>Men</li>
                     <li>Kids</li>
                     <li>Accessories</li>
