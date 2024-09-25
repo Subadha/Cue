@@ -1,7 +1,7 @@
-import img1 from "@/images/img5.png";
-import img2 from "@/images/img6.png";
-import img3 from "@/images/img7.png";
-import img4 from "@/images/img8.png";
+import img1 from "@/images/Home/img5.png";
+import img2 from "@/images/Home/img6.png";
+import img3 from "@/images/Home/img7.png";
+import img4 from "@/images/Home/img8.png";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 

@@ -1,7 +1,7 @@
-import img1 from "@/images/img1.png";
-import img2 from "@/images/img2.png";
-import img3 from "@/images/img3.png";
-import img4 from "@/images/img4.png";
+import img1 from "@/images/Home/img1.png";
+import img2 from "@/images/Home/img2.png";
+import img3 from "@/images/Home/img3.png";
+import img4 from "@/images/Home/img4.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";

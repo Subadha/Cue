@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import bg1 from "@/images/bg1.png";
-import bg5 from "@/images/bg5.png";
+import bg1 from "@/images/Home/bg1.png";
+import bg5 from "@/images/Home/bg5.png";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 

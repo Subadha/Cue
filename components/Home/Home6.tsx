@@ -1,5 +1,5 @@
 import * as React from "react";
-import img from "@/images/img12.png"
+import img from "@/images/Home/img12.png"
 import { Card } from "@/components/ui/card";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaStar } from "react-icons/fa";

@@ -72,9 +72,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-
-                    {/* Discount Circle */}
-                    <div className="relative flex flex-col items-center justify-center w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full bg-color2 p-4 text-center mx-auto md:mt-0 md:-mt-[100px]">
+                    <div className="relative flex flex-col items-center justify-center w-[200px] h-[200px] md:w-[300px] md:h-[300px] sm:w-[100vw] sm:h-[50vh] rounded-full bg-color2 p-4 text-center mx-auto ">
                         <p className="text-white text-base md:text-2xl font-bold">Get 15% Off</p>
                         <p className='text-white text-xs md:text-sm mt-1 md:mt-2'>
                             Join our mailing list to receive exclusive offers <br /> plus 15% OFF your next order.

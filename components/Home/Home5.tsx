@@ -1,7 +1,7 @@
 import Image from "next/image";
-import img9 from "@/images/img9.png";
-import img10 from "@/images/img10.png";
-import img11 from "@/images/img11.png";
+import img9 from "@/images/Home/img9.png";
+import img10 from "@/images/Home/img10.png";
+import img11 from "@/images/Home/img11.png";
 
 export default function Home5() {
     return (
