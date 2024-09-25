@@ -9,26 +9,30 @@ import Link from "next/link";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setIsOpen(prevState => !prevState);
+    };
+
     return (
-        <div>
+        <div className="relative">
             {/* Top bar */}
             <div className="bg-color1 text-white text-center py-2 text-sm md:text-base">
                 <p>Shop Sale up to 25% Off - FREE SHIPPING on orders Over 500</p>
             </div>
 
             {/* Main Navbar */}
-            <div className="flex justify-between items-center px-4 py-3 md:px-10 lg:py-4">
+            <div className="flex justify-between items-center px-4 py-3 md:px-10 lg:py-4 bg-white shadow-md">
                 {/* Logo */}
                 <div className="text-2xl font-bold"><Link href="/">Logo</Link></div>
 
                 {/* Menu Items - hidden on mobile */}
-                <ul className={`hidden lg:flex lg:gap-8 text-lg`}>
+                <ul className="hidden lg:flex lg:gap-8 text-lg">
                     <li><Link href="/product">Women</Link></li>
-                    <li>Men</li>
-                    <li>Kids</li>
-                    <li>Accessories</li>
-                    <li>Climate+</li>
-                    <li>Impact</li>
+                    <li><Link href="/men">Men</Link></li>
+                    <li><Link href="/kids">Kids</Link></li>
+                    <li><Link href="/accessories">Accessories</Link></li>
+                    <li><Link href="/climate">Climate+</Link></li>
+                    <li><Link href="/impact">Impact</Link></li>
                 </ul>
 
                 {/* Icons */}
@@ -39,7 +43,7 @@ export default function Navbar() {
 
                     {/* Hamburger menu (mobile only) */}
                     <div className="lg:hidden">
-                        <button onClick={() => setIsOpen(!isOpen)}>
+                        <button onClick={toggleMenu}>
                             <CiSliderHorizontal size={30} />
                         </button>
                     </div>
@@ -48,14 +52,28 @@ export default function Navbar() {
 
             {/* Mobile Dropdown Menu */}
             {isOpen && (
-                <ul className="absolute left-0 w-full text-center bg-color1 text-white py-4 flex flex-col gap-4 text-lg">
-                    <li>Women</li>
-                    <li>Men</li>
-                    <li>Kids</li>
-                    <li>Accessories</li>
-                    <li>Climate+</li>
-                    <li>Impact</li>
-                </ul>
+                <div className="lg:hidden absolute left-0 w-full bg-color1 text-white py-4 flex flex-col items-center gap-2 z-50">
+                    <ul className="list-none w-full flex flex-col items-center">
+                        <li className="w-full text-center hover:bg-gray-700 rounded">
+                            <Link href="/product">Women</Link>
+                        </li>
+                        <li className="w-full text-center hover:bg-gray-700 rounded">
+                            <Link href="/men">Men</Link>
+                        </li>
+                        <li className="w-full text-center hover:bg-gray-700 rounded">
+                            <Link href="/kids">Kids</Link>
+                        </li>
+                        <li className="w-full text-center hover:bg-gray-700 rounded">
+                            <Link href="/accessories">Accessories</Link>
+                        </li>
+                        <li className="w-full text-center hover:bg-gray-700 rounded">
+                            <Link href="/climate">Climate+</Link>
+                        </li>
+                        <li className="w-full text-center hover:bg-gray-700 rounded">
+                            <Link href="/impact">Impact</Link>
+                        </li>
+                    </ul>
+                </div>
             )}
         </div>
     );
