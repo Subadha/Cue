@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaPinterestP } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaPinterestP } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -18,7 +16,6 @@ const Footer = () => {
 
                     {/* Links Section */}
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 text-center md:text-left">
-                        {/* Learn Column */}
                         <div>
                             <h2 className="mb-6 text-sm font-semibold uppercase text-white">Learn</h2>
                             <ul className="font-medium">
@@ -39,11 +36,9 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-
-                        {/* Contact Column */}
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold  uppercase ">Contact</h2>
-                            <ul className=" font-medium">
+                            <h2 className="mb-6 text-sm font-semibold uppercase">Contact</h2>
+                            <ul className="font-medium">
                                 <li className="mb-4">
                                     <Link href="/" className="hover:underline">Get in Touch</Link>
                                 </li>
@@ -55,11 +50,9 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-
-                        {/* Account Column */}
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold  uppercase ">Account</h2>
-                            <ul className=" font-medium">
+                            <h2 className="mb-6 text-sm font-semibold uppercase">Account</h2>
+                            <ul className="font-medium">
                                 <li className="mb-4">
                                     <Link href="/" className="hover:underline">Login</Link>
                                 </li>
@@ -72,27 +65,28 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="relative flex flex-col items-center justify-center w-[200px] h-[200px] md:w-[300px] md:h-[300px] sm:w-[100vw] sm:h-[50vh] rounded-full bg-color2 p-4 text-center mx-auto ">
-                        <p className="text-white text-base md:text-2xl font-bold">Get 15% Off</p>
-                        <p className='text-white text-xs md:text-sm mt-1 md:mt-2'>
+
+                    {/* Circle Section */}
+                    <div className="relative flex flex-col items-center justify-center w-full max-w-[250px] h-auto aspect-square sm:max-w-[300px] md:max-w-[350px] rounded-full bg-color2 p-6 text-center mx-auto">
+                        <p className="text-white text-lg sm:text-xl md:text-2xl font-bold">Get 15% Off</p>
+                        <p className="text-white text-xs sm:text-sm md:text-base mt-2">
                             Join our mailing list to receive exclusive offers <br /> plus 15% OFF your next order.
                         </p>
                         <input
-                            className='mt-3 text-black p-2 w-[80%] max-w-[160px] md:max-w-[220px] rounded-md text-center text-sm outline-none'
-                            placeholder='Your Email'
+                            className="mt-3 text-black p-2 w-[80%] max-w-[180px] md:max-w-[220px] rounded-md text-center text-sm outline-none"
+                            placeholder="Your Email"
                             type="text"
                         />
-                        <button className='mt-2 w-[60%] max-w-[160px] md:max-w-[220px] rounded-lg bg-color4 text-white p-2 text-sm md:text-base'>
+                        <button className="mt-3 w-[70%] max-w-[180px] md:max-w-[220px] rounded-lg bg-color4 text-white p-2 text-sm md:text-base">
                             Become a VIP
                         </button>
                     </div>
-
                 </div>
 
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <div className="flex mt-4 sm:justify-center sm:mt-0 text-white ">
-                        <Link href="/" className="">
+                    <div className="flex mt-4 sm:justify-center sm:mt-0 text-white">
+                        <Link href="/">
                             <FaInstagram />
                         </Link>
                         <Link href="/" className="ms-5">
@@ -101,7 +95,7 @@ const Footer = () => {
                         <Link href="/" className="ms-5 mr-4">
                             <FaPinterestP />
                         </Link>
-                        <div className='flex gap-3 flex-wrap mt-3 sm:mt-0'>
+                        <div className="flex gap-3 flex-wrap mt-3 sm:mt-0">
                             <span>Privacy Policy</span>
                             <span>Data Request</span>
                             <span>Accessibility</span>
@@ -115,6 +109,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-}
+};
 
 export default Footer;
