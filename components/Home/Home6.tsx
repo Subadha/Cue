@@ -28,7 +28,7 @@ export function Home6() {
                                                 <FaStar /><FaStar /><FaStar /><FaStar />
                                             </div>
                                             <p className="text-sm md:text-base">
-                                                I bought a top from CUE, and I’m so happy with it! The fabric is super soft, and I love that it's eco-friendly. Plus, the print is so unique—it’s cool to know that no one else has the exact same one!
+                                                I bought a top from CUE, and I m so happy with it! The fabric is super soft, and I love that its eco-friendly. Plus, the print is so unique—its cool to know that no one else has the exact same one!
                                             </p>
                                             <p className="text-sm md:text-base">- Shameena Shaik, Bengaluru</p>
                                         </div>
