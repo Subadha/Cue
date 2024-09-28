@@ -1,5 +1,5 @@
 import * as React from "react";
-import img from "@/images/Home/img12.png"
+import img from "@/images/Home/img12.png";
 import { Card } from "@/components/ui/card";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
@@ -20,15 +20,17 @@ export function Home6() {
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
                             <CarouselItem key={index}>
-                                <div className="flex w-full p-5">
+                                <div className="flex flex-col md:flex-row w-full p-5">
                                     <div className="flex flex-1 items-center justify-center p-5">
-                                        <div className="flex flex-col gap-10 font-bold">
-                                            <p className="">What Our Customer Says</p>
-                                            <div className="flex">
+                                        <div className="flex flex-col gap-5 font-bold text-center md:text-left">
+                                            <p className="text-xl md:text-2xl">What Our Customers Say</p>
+                                            <div className="flex justify-center md:justify-start">
                                                 <FaStar /><FaStar /><FaStar /><FaStar />
                                             </div>
-                                            <p>I bought a top from CUE, and I m so happy with it! The fabric is super soft, and I love that it s eco-friendly. Plus, the print is so unique—it s cool to know that no one else has the exact same one!</p>
-                                            <p>-Shameena shaik., Bengaluru</p>
+                                            <p className="text-sm md:text-base">
+                                                I bought a top from CUE, and I’m so happy with it! The fabric is super soft, and I love that it's eco-friendly. Plus, the print is so unique—it’s cool to know that no one else has the exact same one!
+                                            </p>
+                                            <p className="text-sm md:text-base">- Shameena Shaik, Bengaluru</p>
                                         </div>
                                     </div>
                                     <div className="flex flex-1 items-center justify-center p-5">
@@ -36,7 +38,7 @@ export function Home6() {
                                             <Image
                                                 src={img}
                                                 alt={`Slide ${index + 1} Image`}
-                                                className="object-cover"
+                                                className="object-cover w-full h-auto"
                                             />
                                         </Card>
                                     </div>

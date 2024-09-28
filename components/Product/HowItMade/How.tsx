@@ -7,6 +7,7 @@ import img2 from "@/images/Product/plant2.png";
 import img3 from "@/images/Product/plant3.png";
 import img4 from "@/images/Product/plant4.png";
 import img5 from "@/images/Product/plant5.png";
+import Link from "next/link";
 
 const howProducts = [
     {
@@ -57,7 +58,7 @@ const How = () => {
 
                                 {/* Learn More Link */}
                                 <button className="absolute bottom-4 left-4 cursor-pointer hover:underline">
-                                    Learn More
+                                    <Link href="product/how">Learn More </Link>
                                 </button>
                             </Card>
                         </div>

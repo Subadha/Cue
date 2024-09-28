@@ -1,8 +1,8 @@
 "use client"
 // pages/Product3.js
 import { useState } from "react";
-import HowItsMadeCarousel from "@/components/Product/How";
-import WhereItsMadeCarousel from "@/components/Product/Where";
+import HowItsMadeCarousel from "@/components/Product/HowItMade/How";
+import WhereItsMadeCarousel from "@/components/Product/WhereMade/Where";
 const Product3: React.FC = () => {
     const [activeCarousel, setActiveCarousel] = useState<"how" | "where">("how");
 

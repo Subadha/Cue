@@ -5,6 +5,7 @@ import Image from "next/image";
 import map1 from "@/images/Product/map1.png";
 import map2 from "@/images/Product/map2.png";
 import map3 from "@/images/Product/map3.png";
+import Link from "next/link";
 
 const mapProducts = [
     {
@@ -44,7 +45,7 @@ const Where = () => {
                                     </h2>
                                     {/* Learn More Link */}
                                     <button className="mt-2 cursor-pointer hover:underline">
-                                        Learn More
+                                        <Link href="/product/where">Learn More</Link>
                                     </button>
                                 </div>
                             </Card>

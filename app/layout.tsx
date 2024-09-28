@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
-import {Playfair_Display } from "@next/font/google"
+import {Playfair_Display } from "next/font/google"
 import Footer from "@/components/Home/Footer";
 import "./globals.css";
 
