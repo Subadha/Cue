@@ -12,11 +12,9 @@ export default function How1() {
                     Ensuring minimal environmental impact and supporting local communities. Our transparent supply chain showcases the journey from raw materials to finished garments, highlighting our commitment to eco-friendly production.
                 </p>
             </div>
-
             <div className="flex h-[60vh] w-full">
                 <Image src={img1} alt="" className="object-cover w-full h-full" />
             </div>
-
             <div className="flex flex-col px-5 lg:px-[20vw] py-[50px] lg:py-[100px] gap-3">
                 <h1 className="text-xl lg:text-2xl font-bold">Why</h1>
                 <p className="text-base lg:text-lg">

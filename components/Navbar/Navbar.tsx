@@ -32,7 +32,7 @@ export default function Navbar() {
                     <li><Link href="/kids">Kids</Link></li>
                     <li><Link href="/accessories">Accessories</Link></li>
                     <li><Link href="/climate">Climate+</Link></li>
-                    <li><Link href="/impact">Impact</Link></li>
+                    <li><Link href="product//calculator">Impact</Link></li>
                 </ul>
 
                 {/* Icons */}
