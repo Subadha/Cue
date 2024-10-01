@@ -12,7 +12,7 @@ export default function Home3() {
                     <div className="flex flex-col text-left w-full md:w-[300px] gap-3">
                         <h1 className="text-lg md:text-xl font-bold">Our Mission :</h1>
                         <p className="text-sm md:text-base">
-                            CUE was founded with the commitment to create clothing that not only reflects your unique essence but also nurtures the earth.
+                            Thvani was founded with the commitment to create clothing that not only reflects your unique essence but also nurtures the earth.
                         </p>
                         <span className="underline">Learn More</span>
                     </div>

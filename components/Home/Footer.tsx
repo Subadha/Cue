@@ -20,7 +20,7 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold uppercase text-white">Learn</h2>
                             <ul className="font-medium">
                                 <li className="mb-4">
-                                    <Link href="/about" className="hover:underline">About CUE</Link>
+                                    <Link href="/about" className="hover:underline">About Thvani</Link>
                                 </li>
                                 <li className="mb-4">
                                     <Link href="/" className="hover:underline">Detox Your Closet</Link>
