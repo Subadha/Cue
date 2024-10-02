@@ -14,7 +14,7 @@ export default function Home2({props}:{props:string}) {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-5 lg:px-20 justify-items-center">
                 <div className="sm:w-[300px] bg-white border border-gray-200 rounded-lg shadow">
-                    <Link href="#">
+                    <Link href="/product">
                         <Image className="rounded-t-lg" objectFit="contain" src={img1} alt="" />
                     </Link>
                     <div className="flex flex-col p-5 ">
@@ -37,7 +37,7 @@ export default function Home2({props}:{props:string}) {
                     </div>
                 </div>
                 <div className=" sm:w-[300px] bg-white border border-gray-200 rounded-lg shadow">
-                    <Link href="#">
+                    <Link href="/product">
                         <Image className="rounded-t-lg" objectFit="cover" src={img2} alt="" />
                     </Link>
                     <div className="flex flex-col p-5">
@@ -60,7 +60,7 @@ export default function Home2({props}:{props:string}) {
                     </div>
                 </div>
                 <div className=" sm:w-[300px] bg-white border border-gray-200 rounded-lg shadow">
-                    <Link href="#">
+                    <Link href="/product">
                         <Image className="rounded-t-lg" objectFit="cover" src={img3} alt="" />
                     </Link>
                     <div className="flex flex-col p-5">
@@ -83,7 +83,7 @@ export default function Home2({props}:{props:string}) {
                     </div>
                 </div>
                 <div className=" sm:w-[300px] bg-white border border-gray-200 rounded-lg shadow">
-                    <Link href="#">
+                    <Link href="/product">
                         <Image className="rounded-t-lg" objectFit="cover" src={img4} alt="" />
                     </Link>
                     <div className="flex flex-col p-5">
