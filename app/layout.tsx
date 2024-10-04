@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
 import {Playfair_Display } from "next/font/google"
-import Footer from "@/components/Home/Footer";
 import "./globals.css";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Thvani",
