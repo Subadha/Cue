@@ -26,7 +26,7 @@ const Footer = () => {
                                     <Link href="/sustainable" className="hover:underline">Detox Your Closet</Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link href="/" className="hover:underline">Journal</Link>
+                                    <Link href="/blog" className="hover:underline">Journal</Link>
                                 </li>
                                 <li className="mb-4">
                                     <Link href="/" className="hover:underline">FAQ</Link>
