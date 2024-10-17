@@ -38,7 +38,7 @@ export default function Navbar() {
                 {/* Icons */}
                 <div className="flex gap-6">
                     <IoIosSearch size={25} />
-                    <IoBagOutline size={25} />
+                    <Link href="/trackOrder"><IoBagOutline size={25} /></Link>
                     <CiHeart size={25} />
 
                     {/* Hamburger menu (mobile only) */}
