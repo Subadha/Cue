@@ -40,7 +40,7 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold uppercase">Contact</h2>
                             <ul className="font-medium">
                                 <li className="mb-4">
-                                    <Link href="/" className="hover:underline">Get in Touch</Link>
+                                    <Link href="/contactus" className="hover:underline">Get in Touch</Link>
                                 </li>
                                 <li className="mb-4">
                                     <Link href="/" className="hover:underline">Return and Exchange</Link>
@@ -57,7 +57,7 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold uppercase">Account</h2>
                             <ul className="font-medium">
                                 <li className="mb-4">
-                                    <Link href="/" className="hover:underline">Login</Link>
+                                    <Link href="/login" className="hover:underline">Login</Link>
                                 </li>
                                 <li className="mb-4">
                                     <Link href="/" className="hover:underline">Wishlist</Link>
