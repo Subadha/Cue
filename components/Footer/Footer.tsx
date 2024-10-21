@@ -65,6 +65,12 @@ const Footer = () => {
                                 <li className="mb-4">
                                     <Link href="/" className="hover:underline">Gift Card Balance</Link>
                                 </li>
+                                <li className="mb-4">
+                                    <Link href="/trackOrder" className="hover:underline">Track Order</Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link href="/orderexchange" className="hover:underline">Order Exchange</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

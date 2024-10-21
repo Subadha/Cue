@@ -28,7 +28,7 @@ export default function LoginPage() {
                         <button>Create Account</button>
                     </div>
                     <div className="text-color1 text-base sm:text-lg py-2 sm:py-3">
-                        <p>Forget Password?</p>
+                        <Link href="/restpassword" ><p>Forget Password?</p></Link>
                     </div>
                 </div>
                 <div className="flex flex-col gap-2">
